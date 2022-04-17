@@ -1,5 +1,14 @@
 .container {
-  width: 300px;
+  width: 300px; 
+  padding: 10px 15px 45px 15px;
+  border: solid;
+  border-radius: 12px;
+  border-width: 1px;
+}
+
+.container h1{
+  text-align: center;
+  color: var(--navy);
 }
 
 .image {
@@ -8,5 +17,13 @@
 
 .btn {
   width: 100%;
+  background-color: var(--navy);
+  color:var(--white);
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
 }
 
+.btn:hover{
+  background-color: var(--orange);
+}
