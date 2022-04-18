@@ -1,14 +1,60 @@
-.form {
+.form {  
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding: 10px 0px 0px 10px;
+    border: 1px solid var(--black);   
+} 
+
+h1 {
+    text-align: center;
+}
+.form-element {
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    width: 150px;
 }
 
-.form-element {
+.form-element input {
+
 }
 
 .btn {
+    margin-top: 10px;  
+    white-space: pre;
+   
 }
 
 .btn-primary {
+    margin: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    width: 40%;
+    padding: 10px;
+    font-size: 16px; 
+}
+
+.btn-primary:hover {
+    background-color: var(--orange);
+    color: var(--black);
 }
 
 .btn-secondary {
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    color: var(--green);
+    width: 40%;
+    padding: 10px;
+    font-size: 16px; 
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 165, 0, 0.1);
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+label{
+
 }

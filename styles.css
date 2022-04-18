@@ -19,6 +19,7 @@
   --red: #ff0000;
   --orange: #ffa500;
   --green: #006400;
+  --lightorange: rgba(255, 165, 0, 0.1);
 }
 
 body {
