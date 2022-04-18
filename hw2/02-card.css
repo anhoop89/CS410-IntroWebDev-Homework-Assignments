@@ -26,4 +26,5 @@
 
 .btn:hover{
   background-color: var(--orange);
+  color:var(--black);
 }
