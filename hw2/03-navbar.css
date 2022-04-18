@@ -1,12 +1,42 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
-.nav-list {
+.nav-list .list-item {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.list-item {
+.list-item li{
+  float: left;
 }
 
 .nav-link {
+  display: block;
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  padding: 24px 16px 24px 16px;
+  font-size: 22px; 
+  text-align: center;
 }
+
+.nav-link:hover{
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.nav-link:active{
+  background-color: var(--orange);
+  color: var(--black);
+} 
+
+.nav-link:focus{
+  background-color: var(--orange);
+  color: var(--black);
+}
+

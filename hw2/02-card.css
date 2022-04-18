@@ -1,9 +1,8 @@
 .container {
   width: 300px; 
   padding: 10px 15px 45px 15px;
-  border: solid;
+  border: 1px solid;
   border-radius: 12px;
-  border-width: 1px;
 }
 
 .container h1{
