@@ -1,18 +1,18 @@
 @import url("../styles.css");
 
 
-.form {  
+.form {
     margin: 2.5em auto;
-    border: 1px outset var(--black);   
+    border: 1px outset var(--black);
     padding: 50px 0px;
     border-radius: 12px;
-} 
+}
 
 .form h1 {
     margin: 5px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;  
+    font-weight: bold;
     font-size: 1.5em;
     word-spacing: 100vw;
 }
@@ -20,21 +20,25 @@
 .form p {
     margin: 0;
     padding: 30px 0px 0px 10px;
-    font-weight: bold;  
+    font-weight: bold;
     font-size: 1em;
 }
 
 .form #date {
-    width: 220px;
     font-weight: bold;
 }
 
 .form-element {
     display: inline-block;
-    padding: 30px 0px 0px 10px;
-    width: 160px;
-    font-weight: bold;  
+    padding: 30px 10px 0px 10px;
+    font-weight: bold;
     font-size: 1em;
+    width: 100%;
+}
+
+.form-element input {
+    float: right;
+    width: 65%;
 }
 
 .radio_btn {
@@ -46,34 +50,33 @@
     margin: auto;
     text-align: center;
     display: inline-flex;
-    justify-content: space-between;
     font-weight: bold;
     width: 100%;
 }
 
-.btn input{
-    width: 100%;
+.btn input {
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .btn-primary {
-    margin: 30px 0px 0px 10px;  
+    margin: 30px 0px 0px 10px;
     background-color: var(--green);
-    color: var(--white);    
+    color: var(--white);
 }
 
 .btn-primary:hover {
     background-color: var(--orange);
     color: var(--black);
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .btn-secondary {
-    margin: 30px 10px 0px 5px;  
+    margin: 30px 10px 0px 5px;
     background-color: var(--white);
     border: 1px solid var(--green);
-    color: var(--green); 
+    color: var(--green);
 }
 
 .btn-secondary:hover {
@@ -81,4 +84,3 @@
     border: 1px solid var(--green);
     color: var(--green);
 }
-

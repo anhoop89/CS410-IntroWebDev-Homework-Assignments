@@ -15,17 +15,24 @@
     <form class="form" action="">
       <h1> Registration Form</h1>
       <!-- Add your code here -->
-      <label class="form-element" for="username">Username: </label>
-      <input type="Username" id="username" name="username" />
 
-      <label class="form-element" for="email">Email: </label>
-      <input type="email" id="email" name="email" />
+      <div class="form-element">
+        <label for="username">Username: </label>
+        <input type="Username" id="username" name="username" />
+      </div>
 
-      <label class="form-element" for="pass">Password: </label>
-      <input type="password" id="pass" name="password">
+      <div class="form-element">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" />
+      </div>
 
+      <div class="form-element">
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="password">
+      </div>
 
       <p>Would you like to sign up for the newsletter?</p>
+
       <div class="radio_btn">
         <input type="radio" id="yes" name="answer" value="yes">
         <label for="yes">Yes, sign me up</label><br>
@@ -33,8 +40,10 @@
         <label for="no">No, thank you</label>
       </div>
 
-      <label class="form-element" for="date">Date: </label>
-      <input type="date" id="date" name="date" />
+      <div class="form-element">
+        <label for="date">Date: </label>
+        <input type="date" id="date" name="date" />
+      </div>
 
       <div class="btn">
         <input class="btn-primary" type="submit" name="submit" value="Submit" />
