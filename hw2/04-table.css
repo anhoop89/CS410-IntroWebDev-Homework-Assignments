@@ -2,10 +2,29 @@
   --lightorange: rgba(255, 165, 0, 0.1);
 }
 
-.table-heading {
-  /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
+th, td {
+  border: 2px solid;
+   padding: 15px;
+  font-size: 22px; 
+  width: 250px;
 }
 
-.channel {
+.table-heading {
+  /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
+  background-color: var(--green);
+  border: 2px solid var(--black);
+  color: var(--white);
+  font-size: 22px; 
+  text-align: center;  
+}
+
+.channel th {
   /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
+  background-color: var(--orange);
+
+  color: var(--black);
+}
+
+.channel:hover td{
+  background-color: var(--lightorange);
 }
