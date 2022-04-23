@@ -20,8 +20,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;          
   flex-direction: column-reverse;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 /* Code for exercise 03-grid */
