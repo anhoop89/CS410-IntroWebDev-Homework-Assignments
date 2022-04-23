@@ -9,8 +9,13 @@ h1 {
   justify-content: flex-end;
 }
 
-.flex-container-1 > .item7 { order: -2; }
-.flex-container-1 > .item4 { order: -1; }
+.flex-container-1 > .item7 { 
+  order: -2; 
+}
+
+.flex-container-1 > .item4 { 
+  order: -1; 
+}
 
 
 /* Code for exercise 02-flex */
