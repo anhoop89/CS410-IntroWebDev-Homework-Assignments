@@ -157,3 +157,21 @@ h1 {
 }
 
 /* Code for exercise 06-bootstrap-form */
+
+.setform {
+  width: 400px;
+  margin-top: 40px;
+  padding: 100px;
+  background-color: var(--gray3); 
+}
+
+.setform h1 {
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.btn {
+  width: 100%;
+}
