@@ -9,12 +9,12 @@ h1 {
   justify-content: flex-end;
 }
 
-.flex-container-1 .item7 { 
-  order: -2; 
+.flex-container-1 .item7 {
+  order: -2;
 }
 
-.flex-container-1 .item4 { 
-  order: -1; 
+.flex-container-1 .item4 {
+  order: -1;
 }
 
 
@@ -23,7 +23,7 @@ h1 {
 .flex-container-2 {
   height: 400px;
   display: flex;
-  flex-flow: column-reverse wrap;          
+  flex-flow: column-reverse wrap;
   align-items: center;
   justify-content: center;
 }
@@ -34,27 +34,27 @@ h1 {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 2fr 1fr 3fr 2fr;
-  
+
 }
 
 .grid-container-1 .grid-item {
   order: 0;
 }
 
-.grid-container-1 .item7 { 
-  order: -1; 
+.grid-container-1 .item7 {
+  order: -1;
   grid-column-end: span 4;
 }
 
-.grid-container-1 .item2 { 
-  order: 0; 
+.grid-container-1 .item2 {
+  order: 0;
   grid-row: span 2;
   grid-column: span 2;
 }
 
-.grid-container-1 .item6, 
-.grid-container-1 .item8 { 
-  order: 2; 
+.grid-container-1 .item6,
+.grid-container-1 .item8 {
+  order: 2;
   grid-column: span 2;
 }
 
@@ -93,7 +93,7 @@ h1 {
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     'header'
     'jumbotron'
     'section'
@@ -134,25 +134,25 @@ h1 {
 
 /* Code for exercise 05-bootstrap-grid */
 
-.bootstrap-grid .row > * {
+.bootstrap-grid .row>* {
   height: 100px;
   border: 1px solid var(--white);
   padding: 10px;
 }
 
-.bootstrap-grid .row:nth-child(1) > * {
+.bootstrap-grid .row:nth-child(1)>* {
   background-color: var(--purple);
 }
 
-.bootstrap-grid .row:nth-child(2) > * {
+.bootstrap-grid .row:nth-child(2)>* {
   background-color: var(--navy);
 }
 
-.bootstrap-grid .row:nth-child(3) > * {
+.bootstrap-grid .row:nth-child(3)>* {
   background-color: var(--teal);
 }
 
-.bootstrap-grid .row:nth-child(4) > * {
+.bootstrap-grid .row:nth-child(4)>* {
   background-color: var(--green);
 }
 
@@ -162,7 +162,7 @@ h1 {
   width: 400px;
   margin-top: 40px;
   padding: 100px;
-  background-color: var(--gray3); 
+  background-color: var(--gray3);
 }
 
 .setform h1 {
