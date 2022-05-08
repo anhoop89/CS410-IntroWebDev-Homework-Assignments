@@ -14,9 +14,9 @@ main.style.margin = "auto";
 main.width = "60%";
 main.style.paddingTop = "100px";
 
-let header_element = document.createElement('h1');
-header_element.textContent = "04-hello.js";
-main.appendChild(header_element);
+let heading1 = document.createElement('h1');
+heading1.textContent = "04-hello.js";
+main.appendChild(heading1);
 
 let image_element = document.createElement('img');
 image_element.setAttribute('id', 'cat_image');
