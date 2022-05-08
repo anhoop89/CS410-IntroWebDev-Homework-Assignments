@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
+    <link rel="stylesheet" href="../hw2/05-form.css" />
     <script defer src="05-form.js"></script>
   </head>
   <body>
     <main>
       <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+        <h1 class="title">REGISTRATION FORM</h1>
+
+        <div class="form-element">
+          <label for="username">Username: </label>
+          <input type="Username" id="username" name="username" />
+        </div><br/>
+
+        <div class="form-element">
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" />
+        </div><br/>
+
+        <div class="form-element">
+          <label for="pass">Password: </label>
+          <input type="password" id="pass" name="password">
+        </div><br/>
+
+        <fieldset class="form-element">
+          <legend>Would you like to sign up for the newsletter? </legend>       
+          <div class="radio_btn">
+            <input type="radio" id="yes" name="answer" value="yes">
+            <label for="yes">Yes, sign me up</label><br>
+            <input type="radio" id="no" name="answer" value="no">
+            <label for="no">No, thank you</label>
+          </div>
+        </fieldset><br/>
+
+        <div class="form-element">
+          <label for="date">Date: </label>
+          <input type="date" id="date" name="date" /><br/><br/>
+        </div>
+
+        <div class="btn">
+          <input class="btn-primary" type="submit" name="submit" value="Submit" />
+          <input class="btn-secondary" type="reset" name="reset" value="Reset" />
+        </div>
+
       </form>
     </main>
   </body>
