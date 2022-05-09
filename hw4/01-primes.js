@@ -29,7 +29,7 @@ const getPrimes = () => {
   } while (number <= max_number)
 };
 
-
+ 
 getPrimes();
 // 2
 // 3
