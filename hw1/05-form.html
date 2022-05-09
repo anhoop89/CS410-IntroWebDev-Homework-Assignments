@@ -13,36 +13,36 @@
 <body>
   <main>
     <form class="form" action="">
-      <h1> Registration Form</h1>
-      <!-- Add your code here -->
+      <h1 class="title">REGISTRATION FORM</h1>
 
       <div class="form-element">
         <label for="username">Username: </label>
         <input type="Username" id="username" name="username" />
-      </div>
+      </div><br/>
 
       <div class="form-element">
         <label for="email">Email: </label>
         <input type="email" id="email" name="email" />
-      </div>
+      </div><br/>
 
       <div class="form-element">
         <label for="pass">Password: </label>
         <input type="password" id="pass" name="password">
-      </div>
+      </div><br/>
 
-      <p>Would you like to sign up for the newsletter?</p>
-
-      <div class="radio_btn">
-        <input type="radio" id="yes" name="answer" value="yes">
-        <label for="yes">Yes, sign me up</label><br>
-        <input type="radio" id="no" name="answer" value="no">
-        <label for="no">No, thank you</label>
-      </div>
+      <fieldset class="form-element">
+        <legend>Would you like to sign up for the newsletter? </legend>       
+        <div class="radio_btn">
+          <input type="radio" id="yes" name="answer" value="yes">
+          <label for="yes">Yes, sign me up</label><br>
+          <input type="radio" id="no" name="answer" value="no">
+          <label for="no">No, thank you</label>
+        </div>
+      </fieldset><br/>
 
       <div class="form-element">
         <label for="date">Date: </label>
-        <input type="date" id="date" name="date" />
+        <input type="date" id="date" name="date" /><br/><br/>
       </div>
 
       <div class="btn">
@@ -53,5 +53,4 @@
     </form>
   </main>
 </body>
-
 </html>
