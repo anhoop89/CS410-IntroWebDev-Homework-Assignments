@@ -3,7 +3,7 @@ let form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
-  // Add your code here
+  // Add your code here 
   const username = document.getElementById('username').value;
   const email = document.getElementById('email').value;
   const newsletter = document.getElementsByName("answer");
