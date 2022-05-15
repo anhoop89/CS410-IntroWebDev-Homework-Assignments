@@ -1,4 +1,5 @@
 // Data below taken from the Star Wars API: https://swapi.dev/
+//source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
 const starships = [
   {
     name: 'CR90 corvette',
@@ -146,20 +147,45 @@ const starships = [
 const mapStarships = (input) => {
   // Return an array with the name, manufacturer, and cost (if not unknown) of each ship
   // Format: "Star Destroyer, manufactured by Kuat Drive Yards - cost: 150,000,000 credits"
-
-  return 'mapStarships';
+  const getData = [];
+  input.forEach(element => {
+    let getName = element.name + ", ";
+    let getManu = getName + "manufactured by " + element.manufacturer;
+    //checking the cost is unknown or not
+    let getCost = ""; 
+    if (element.cost_in_credits !== 'unknown') {
+      getCost = getManu + " - cost: " + Number(element.cost_in_credits).toLocaleString()+ " credits";
+      getData.push(getCost);
+    }  
+    else 
+      getData.push(getManu);
+  });
+  return getData;
 };
 
 const filterStarships = (input) => {
   // Return an array with all ships that have less than 10 passengers with more than one crew member
+  let index = 0; // this is an index of a new array to collect data based on the above requirements. 
+  const getData = [];
+  for (let i = 0; i < input.length; i++){
+    if (Number(input[i].passengers) < 10 && Number(input[i].crew) > 1) {
+      getData[index] = input[i];
+      index++;
+    }
+  }
 
-  return 'filterStarships';
+  return getData;
 };
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
+  let totalCost = 0;
+  input.forEach(element => {
+    if (element.cost_in_credits !== 'unknown')
+      totalCost += Number(element.cost_in_credits);
+  });
 
-  return `reduceStarships `;
+  return ( 'The cost of all starships is ' + totalCost.toLocaleString() + ' credits');
 };
 
 console.log(mapStarships(starships));
