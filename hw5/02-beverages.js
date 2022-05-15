@@ -22,7 +22,7 @@ const fetchData = async (url) => {
       drinkImage.alt = drink.strDrink;
       drinkImage.setAttribute("src", drink.strDrinkThumb);
 
-      drinkName.classList.add("drink-name", "font-weight-bold");
+      drinkName.classList.add("drink-name", "card-text");
       drinkName.textContent = drink.strDrink;
 
       drinkContent.appendChild(drinkImage);

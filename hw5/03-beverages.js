@@ -11,12 +11,12 @@ $(document).ready(function () {
       .addClass("eachDrink col-md-3 p-0 m-3 figure")
         // drinkImage
         .append($('<img>')
-        .addClass("card-img-top")
-        .attr("src", drink.strDrinkThumb).attr("alt", drink.strDrink)
+        .addClass("drink-image card-img-top")
+        .attr('src', drink.strDrinkThumb).attr('alt', drink.strDrink)
         )
         // drinkName
         .append($('<p>')
-        .addClass("card-text")
+        .addClass("drink-name card-text")
         .text(drink.strDrink)
         )
       )
