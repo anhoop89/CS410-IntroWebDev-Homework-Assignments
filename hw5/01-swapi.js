@@ -1,5 +1,4 @@
 // Data below taken from the Star Wars API: https://swapi.dev/
-//source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
 const starships = [
   {
     name: 'CR90 corvette',
