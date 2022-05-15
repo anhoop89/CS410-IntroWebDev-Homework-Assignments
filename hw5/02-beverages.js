@@ -24,6 +24,7 @@ const addDrinksToDom = (drinkItems) => {
     drinkContent.appendChild(drinkImage);
     drinkContent.appendChild(drinkName);
     mainPage.appendChild(drinkContent);
+    
   });
 
   app.appendChild(mainPage);
