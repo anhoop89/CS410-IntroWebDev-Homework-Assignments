@@ -28,9 +28,8 @@ const fetchData = async (url) => {
       drinkContent.appendChild(drinkImage);
       drinkContent.appendChild(drinkName);
       mainPage.appendChild(drinkContent);
+      app.appendChild(mainPage);
     });
-
-    app.appendChild(mainPage);
 
     let loader = document.querySelector("#loading");
     app.removeChild(loader);
