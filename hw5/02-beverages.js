@@ -4,14 +4,14 @@ let app = document.querySelector('#results');
 
 const addDrinksToDom = (drinkItems) => {
   let mainPage = document.createElement("div");
-  mainPage.classList.add("row", "justify-content-center");
+  mainPage.classList.add(".container", "row", "justify-content-center");
 
   drinkItems.drinks.forEach(drink => {
     let drinkContent = document.createElement("div");
     let drinkImage = document.createElement("img");
     let drinkName = document.createElement("p");
 
-    drinkContent.classList.add("eachDrink", "p-0", "m-3", "figure");
+    drinkContent.classList.add("eachDrink", "col-md-3", "p-0", "m-3", "figure");
     // card.style.width = "12rem";
 
     drinkImage.classList.add("drink-image", "card-img-top");
