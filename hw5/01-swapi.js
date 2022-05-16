@@ -174,9 +174,8 @@ const filterStarships = (input) => {
 
 const reduceStarships = (input) => {
   // Return the cost to purchase all ships in the input array
-  let intialValue = 0;
-  intialValue = (input[0].cost_in_credits !== 'unknown') ? Number(input[0].cost_in_credits) : 0;
-  
+  let intialValue = 0;  
+
   const totalCost = input.reduce((preValue, currValue) => {
     currValue = (currValue.cost_in_credits !== 'unknown') ? Number(currValue.cost_in_credits) : 0;
     return preValue + currValue;
