@@ -3,45 +3,38 @@ let form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
-  // Add your code here 
-  const username = document.getElementById('username');
-  const email = document.getElementById('email');
-  const newsletter = document.getElementsByName("answer");
-  const date = document.getElementById('date');
-
-  //check the radio button 
-  var radio_check = false;
-  if (newsletter[0].checked || newsletter[1].checked)
-    radio_check = true;
 
   //check input is empty or not. 
-  if (!isNaN(username.value) && !isNaN(email.value) && !isNaN(date.value) && !radio_check)
+  if (!isNaN(form.username.value) && !isNaN(form.email.value) && !isNaN(form.date.value) && !form.answer.checked)
     console.warn("You must enter some data to submit this form");
   else {
     console.log("======= Form Submission =======");
     //Username
-    if (!isNaN(username.value))
+    if (!isNaN(form.username.value))
       console.log("\tUsername   : no submission");
     else
-      console.log("\tUsername   : " + username.value);
+      console.log("\tUsername   : " + form.username.value);
     //Email
-    if (!isNaN(email.value))
+    if (!isNaN(form.email.value))
       console.log("\tEmail      : no submission");
     else
-      console.log("\tEmail      : " + email.value);
+      console.log("\tEmail      : " + form.email.value);
     //Newsletter
-    if (newsletter[0].checked) {
-      console.log("\tNewsletter : " + newsletter[0].value);
-    } else if (newsletter[1].checked) {
-      console.log("\tNewsletter : " + newsletter[1].value);
-    }
-    else
+    if (!isNaN(form.answer.value))
       console.log("\tNewsletter : no submission");
+    else {
+      if (form.answer.checked) {
+        console.log("\tNewsletter : " + form.answer.value);
+      } else if (!form.answer.checked) {
+        console.log("\tNewsletter : " + form.answer.value);
+      } else
+        console.log("\tNewsletter : no submission");
+    }
     //Date
-    if (!isNaN(date.value))
+    if (!isNaN(form.date.value))
       console.log("\tDate       : no submission");
     else
-      console.log("\tDate       : " + date.value);
+      console.log("\tDate       : " + form.date.value);
   }
   event.preventDefault();
 }
