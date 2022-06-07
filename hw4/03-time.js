@@ -19,13 +19,18 @@ const calculateTime = (date1, date2) => {
   let year_esplased = time_esplased.getFullYear() - 1970;
   let month_esplased = time_esplased.getMonth();
 
-  if (year_esplased.toString() != "NaN") {
+  if (year_esplased.toString() !== "NaN") {
     if (year_esplased > 0) {
-      return("Time esplased: "+ year_esplased + " year(s), "+ month_esplased+ " month(s) ")
+      if (month_esplased > 1)
+        return("Time esplased: "+ year_esplased + " years, "+ month_esplased+ " months ")
+      return("Time esplased: "+ year_esplased + " years, "+ month_esplased+ " month ")
     }
     else {
-      if (month_esplased + 1 != 12)
-        return("Time esplased: " + month_esplased + " month(s) ")
+      if (month_esplased + 1 !== 12) {
+        if (month_esplased > 1)        
+          return("Time esplased: " + month_esplased + " months ")
+        return("Time esplased: " + month_esplased + " month ")
+      }
       else 
         return("Error: Invalid input provided. These were the same date!")
     }
